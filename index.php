@@ -1,39 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/pharma.css">
-    <link rel="stylesheet" href="src/icons/fontawesome-free-6.1.1-web/css/all.css">
-    <title>pharma</title>
-</head>
-<body>
-    <!-- header (en tête) -->
-    <div class="header" id="header">
-        <!-- title -->
-        <div class="title">
-            <!-- logo -->
-            <a href="#" class="logo"> Phar<span>Ma</span></a>
-            <!-- pour le mobile -->
-            <a href="#" class="responsive" id="responsive"><i class="fa fa-bars" id="fa"></i></a>
-        </div>
 
-        <!-- menu -->
-        <div class="menu" id="menu">
-            <ul>
-                <li class="list-menu"><a href="#" class="link-menu active">Accueil</a></li>
-                <li class="list-menu"><a href="about.html" class="link-menu">A propos</a></li>
-                <li class="list-menu"><a href="stock.html" class="link-menu">Stock</a></li>
-                <li class="list-menu"><a href="#" class="link-menu">Produit</a></li>
-                <li class="list-menu"><a href="#" class="link-menu">Se connecter</a></li>
-            </ul>
-        </div>
-        <!--  end menu -->
+<?php 
 
-    </div>
-    <!-- end header -->
+$title = "page d'accueil ";
 
+require_once "elements/header.php"  ?>
 
     <!-- container benefice, perte, capital -->
     <div class="container d-flex">
@@ -89,10 +59,4 @@
     <!-- end container -->
 
 
-
-
-    <script src="src/js/pharma.js"></script>
-    <script src="src/icons/fontawesome-free-6.1.1-web/js/all.js"></script>
-
-</body>
-</html>
+<?php require_once "elements/footer.php"  ?>

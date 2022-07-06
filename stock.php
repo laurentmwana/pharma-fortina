@@ -1,45 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/pharma.css">
-    <link rel="stylesheet" href="src/icons/fontawesome-free-6.1.1-web/css/all.css">
-    <title>pharma - a propos</title>
-</head>
-<body>
-    <!-- header (en tête) -->
-    <div class="header" id="header">
-        <!-- title -->
-        <div class="title">
-            <!-- logo -->
-            <a href="#" class="logo"> Phar<span>Ma</span></a>
-            <!-- pour le mobile -->
-            <a href="#" class="responsive" id="responsive"><i class="fa fa-bars" id="fa"></i></a>
-        </div>
+<?php require_once "elements/header.php"; ?>
 
-        <!-- menu -->
-        <div class="menu" id="menu">
-            <ul>
-                <li class="list-menu"><a href="index.html" class="link-menu">Accueil</a></li>
-                <li class="list-menu"><a href="about.html" class="link-menu">A propos</a></li>
-                <li class="list-menu"><a href="stock.html" class="link-menu">Stock</a></li>
-                <li class="list-menu"><a href="product.html" class="link-menu active">Produit</a></li>
-                <li class="list-menu"><a href="#" class="link-menu">Se connecter</a></li>
-            </ul>
-        </div>
-        <!--  end menu -->
 
-    </div>
-    <!-- end header -->
     <div class="container">
-        <h1 class="c-title">Produits</h1>
+        <div class="message bg-success" id="message-alert"><span class="fa fa-check"></span>  Vous avez ajouter un  produit dans le stock</div>
+        <h1 class="c-title">Stock</h1>
+
         <div class="group-btn">
-            <a href="addProduct.html" class="link-btn"><span class="fa fa-plus"></span> Ajouter</a>
-            <a href="stock.html" class="link-btn"><span class="fa fa-table"></span> stock</a>
-            <a href="categories.html" class="link-btn"><span class="fa fa-table"></span> Categories</a>
+            <a href="addStock.html" class="link-btn"><span class="fa fa-plus"></span> Ajouter</a>
+            <a href="product.html" class="link-btn"><span class="fa fa-table"></span> produit</a>
         </div>
+
         <div class="group-option">
             <form action="" class="form">
                 <div class="group-field">
@@ -170,15 +140,9 @@
             </div>
             <a href="#" class="link-paginate"> <span class="fa fa-arrow-right"></span></a>
         </nav>
+
+
     </div>
+  
 
-
-    
-
-
-
-    <script src="src/js/pharma.js"></script>
-    <script src="src/icons/fontawesome-free-6.1.1-web/js/all.js"></script>
-
-</body>
-</html>
+<?php require_once "elements/footer.php";  ?>
